@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
+<title>F1 Racer Data Example</title>
+</head>
+<body>
+    <!--Navbar directly from bootstrap-->
+    <nav>
+        <ul class="nav">
+            <li class="nav-item">
+            <a class="nav-link active" href="https://weather.com/">Weather</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="https://www.formula1.com/">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="https://www.autosport.com/f1/drivers/">Racer</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sample</a>
+            </li>
+        </ul>
+      </nav>
+      <section>
+          <!--F1 Racer Form-->
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <label for="season">Season</label>
+                <input type="text" class="form-control" placeholder="Season" id="season">
+              </div>
+              <div class="col">
+                <label for="round">Round</label>
+                <input type="text" class="form-control" placeholder="Round" id="round">
+              </div>
+              <button type="button" class="btn btn-primary" onclick="getData()">Get Standings</button>
+            </div>
+          </form>
+          <!--F1 Racer Table Data-->
+          <div class= "driver-list"></div>
+      </section>
+</body>
+</html>
